@@ -1,31 +1,31 @@
     mkdir 0x00-shell_basics
     cd 0x00-shell_basics
     
-    cat > {insert file_name in bold italics here} {pressENTER}
-    #!/bin/bash {pressENTER}
-    {insert the highlighted text here} {pressENTER}
-    {press CTRL+D}
-    chmod u+x {insert file_name in talics here} {pressENTER}
-    git add . {pressENTER}
-    git commit -m 'write the commit message you want' {pressENTER}
-    git push {pressENTER}
-    
-    NOTE: {} curly brackets is only used to show instructions/commands to follow
-    
-    CODE FOR 19:
-    cat > school.mgc {pressENTER}
-    0 string SCHOOL School data {pressENTER}
-    !:mime School {pressENTER}
-    chmod u+x school.mgc {pressENTER}
-    file -C -m school.mgc {pressENTER}
-    git add . {pressENTER}
-    git commit -m 'write the commit message you want' {pressENTER}
-    git push {pressENTER}
-    
+    NOTE: {} curly brackets is only used to show instructions/commands to follow   
+
 00. File ***0-current_working_directory*** writes a script that prints the absolute path name of the current working directory. `pwd`
+```
+cat > 0-current_working_directory {pressENTER}
+#!/bin/bash {pressENTER}
+pwd {pressENTER}
+{press CTRL+D}
+chmod u+x 0-current_working_directory {pressENTER}
+git add . {pressENTER}
+git commit -m 'write the commit message you want' {pressENTER}
+git push {pressENTER}
+```
   
 01. File ***1-listit*** displays the contents list of the current directory. `ls`
-
+```
+cat > 1-listit {pressENTER}
+#!/bin/bash {pressENTER}
+ls {pressENTER}
+{press CTRL+D}
+chmod u+x 1-listit {pressENTER}
+git add . {pressENTER}
+git commit -m 'write the commit message you want' {pressENTER}
+git push {pressENTER}
+```
 02. File ***2-bring_me_home*** writes a script that changes the working directory to the user’s home directory. `cd ~`
 
 03. File ***3-listfiles*** displays current directory contents in a long format. ``ls -l``
@@ -61,3 +61,13 @@
 18. File ***18-commas*** writes a command that lists all the files and directories of the current directory, separated by commas (,). Directory names should end with a slash (/). Files and directories starting with a dot (.) should be listed. The listing should be alpha ordered, except for the directories . and .. which should be listed at the very beginning. Only digits and letters are used to sort; Digits should come first. You can assume that all the files we will test with will have at least one letter or one digit. The listing should end with a new line. `ls -pamv`
 
 19. File ***19-school.mgc*** reates a magic file school.mgc that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0.
+```
+cat > school.mgc {pressENTER}
+0 string SCHOOL School data {pressENTER}
+!:mime School {pressENTER}
+chmod u+x school.mgc {pressENTER}
+file -C -m school.mgc {pressENTER}
+git add . {pressENTER}
+git commit -m 'write the commit message you want' {pressENTER}
+git push {pressENTER}
+```
