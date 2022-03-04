@@ -52,15 +52,15 @@ git push {pressENTER}
 
 14. File ***14-copy_html*** creates a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory. You can consider that all HTML files have the extension .html `cp -nu *.html ..`
 
-15. File ***15-lets_move*** creates a script that moves all files beginning with an uppercase letter to the directory /tmp/u. You can assume that the directory /tmp/u will exist when we will run your script. `mv [[:upper:]]* /tmp/u`
+15. File ***100-lets_move*** creates a script that moves all files beginning with an uppercase letter to the directory /tmp/u. You can assume that the directory /tmp/u will exist when we will run your script. `mv [[:upper:]]* /tmp/u`
 
-16. File ***16-clean_emacs*** creates a script that deletes all files in the current working directory that end with the character ~. `rm *~`
+16. File ***101-clean_emacs*** creates a script that deletes all files in the current working directory that end with the character ~. `rm *~`
 
-17. File ***17-tree*** creates a script that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory. You are only allowed to use two spaces (and lines) in your script, not more. `mkdir -p welcome/to/school`
+17. File ***102-tree*** creates a script that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory. You are only allowed to use two spaces (and lines) in your script, not more. `mkdir -p welcome/to/school`
 
-18. File ***18-commas*** writes a command that lists all the files and directories of the current directory, separated by commas (,). Directory names should end with a slash (/). Files and directories starting with a dot (.) should be listed. The listing should be alpha ordered, except for the directories . and .. which should be listed at the very beginning. Only digits and letters are used to sort; Digits should come first. You can assume that all the files we will test with will have at least one letter or one digit. The listing should end with a new line. `ls -pamv`
+18. File ***103-commas*** writes a command that lists all the files and directories of the current directory, separated by commas (,). Directory names should end with a slash (/). Files and directories starting with a dot (.) should be listed. The listing should be alpha ordered, except for the directories . and .. which should be listed at the very beginning. Only digits and letters are used to sort; Digits should come first. You can assume that all the files we will test with will have at least one letter or one digit. The listing should end with a new line. `ls -pamv`
 
-19. File ***19-school.mgc*** reates a magic file school.mgc that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0.
+19. File ***school.mgc*** reates a magic file school.mgc that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0.
 ```
 cat > school.mgc {pressENTER}
 0 string SCHOOL School data {pressENTER}
