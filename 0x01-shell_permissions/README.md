@@ -1,8 +1,8 @@
     git clone https://{Your Personal Access Token}@github.com/{Your username}/{repository address.git}
     cd root/alx-system_engineering-devops
     git init
-    mkdir 0x00-shell_permissions
-    cd 0x00-shell_permissions
+    mkdir 0x01-shell_permissions
+    cd 0x01-shell_permissions
     echo 'My first readme' > README.md
     cat README.md
     git add .
@@ -12,7 +12,7 @@
     NOTE: {} curly brackets is only used to show instructions/commands to follow
     NOTE: {filename} is in bold-italics
     
-    cd root/alx-system_engineering-devops/0x00-shell_permissions
+    cd root/alx-system_engineering-devops/0x01-shell_permissions
     cat > {filename} {pressENTER}
     #!/bin/bash {pressENTER}
     {highlighted text} {pressENTER}
