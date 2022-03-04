@@ -1,8 +1,30 @@
+    git clone https://{Your Personal Access Token}@github.com/{Your username}/{repository address.git}
+    cd root/alx-system_engineering-devops
+    git init
     mkdir 0x00-shell_basics
     cd 0x00-shell_basics
+    echo 'My first readme' > README.md
+    cat README.md
+    git add .
+    git commit -m "Commit message"
+    git push
     
-    NOTE: {} curly brackets is only used to show instructions/commands to follow   
-
+    NOTE: {} curly brackets is only used to show instructions/commands to follow
+    NOTE: {filename} is in bold-italics
+    
+    cd root/alx-system_engineering-devops/0x00-shell_basics
+    cat > {filename} {pressENTER}
+    #!/bin/bash {pressENTER}
+    {highlighted text} {pressENTER}
+    {press CTRL+D}
+    wc -l {filename} {pressENTER}
+    head -n 1 {filename} {pressENTER}
+    chmod u+x {filename} {pressENTER}
+    git add . {pressENTER}
+    git commit -m 'write the commit message you want' {pressENTER}
+    git push {pressENTER}
+    clear {pressENTER}
+    
 00. File ***0-current_working_directory*** writes a script that prints the absolute path name of the current working directory. `pwd`
 ```
 cat > 0-current_working_directory {pressENTER}
@@ -13,6 +35,7 @@ chmod u+x 0-current_working_directory {pressENTER}
 git add . {pressENTER}
 git commit -m 'write the commit message you want' {pressENTER}
 git push {pressENTER}
+clear {pressENTER}
 ```
   
 01. File ***1-listit*** displays the contents list of the current directory. `ls`
@@ -25,10 +48,11 @@ chmod u+x 1-listit {pressENTER}
 git add . {pressENTER}
 git commit -m 'write the commit message you want' {pressENTER}
 git push {pressENTER}
+clear {pressENTER}
 ```
 02. File ***2-bring_me_home*** writes a script that changes the working directory to the user’s home directory. `cd ~`
 
-03. File ***3-listfiles*** displays current directory contents in a long format. ``ls -l``
+03. File ***3-listfiles*** displays current directory contents in a long format. `ls -l`
 
 04. File ***4-listmorefiles*** displays current directory contents, including hidden files (starting with .) Using the long format. `ls -la`
 
@@ -46,7 +70,7 @@ git push {pressENTER}
 
 11. File ***11-lists*** writes a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format. `ls -al . .. /boot`
 
-12. File ***12-file_type*** writes a script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script. `file  /tmp/iamafile`
+12. File ***12-file_type*** writes a script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script. `file /tmp/iamafile`
 
 13. File ***13-symbolic_link*** creates a symbolic link to /bin/ls, named __ls__. The symbolic link should be created in the current working directory. `ln -s bin/ls __ls__`
 
